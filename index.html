@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>말랑이는 내 친구</title>
+  <meta
+    name="description"
+    content="말랑이를 돌보고 성장시키며 특별한 인연을 만들어가는 감성 육성 게임"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: #ffffff;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      background:
+        radial-gradient(circle at 50% 20%, #326ea8 0%, transparent 28%),
+        radial-gradient(circle at 75% 35%, #59479d 0%, transparent 25%),
+        linear-gradient(160deg, #061525, #102d4a 55%, #15253c);
+    }
+
+    .page {
+      width: min(960px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0 40px;
+    }
+
+    .hero {
+      min-height: 540px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .badge {
+      align-self: center;
+      padding: 8px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      color: #c9eaff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    h1 {
+      margin: 24px 0 12px;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 0 auto;
+      max-width: 620px;
+      color: #d3e5f5;
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .card {
+      margin: 24px 0;
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.09);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(12px);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #bce9ff;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .feature {
+      padding: 22px;
+      border-radius: 20px;
+      color: #dcecf8;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    nav a {
+      padding: 12px 18px;
+      border-radius: 999px;
+      color: #092037;
+      font-weight: bold;
+      text-decoration: none;
+      background: #bce9ff;
+    }
+
+    footer {
+      padding: 40px 0 10px;
+      color: #9eb8cc;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: #ccecff;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding-top: 40px;
+      }
+
+      .hero {
+        min-height: 470px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="badge">MALANGI IS MY FRIEND</span>
+
+      <h1>말랑이는 내 친구</h1>
+
+      <p class="subtitle">
+        나만의 말랑이를 돌보고 성장시키며 다양한 궁전과 미니게임,
+        친구들과의 특별한 인연을 즐기는 감성 육성 게임입니다.
+      </p>
+
+      <nav>
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="terms.html">이용약관</a>
+        <a href="support.html">고객지원</a>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h2>말랑이와 함께하는 하루</h2>
+
+      <div class="features">
+        <div class="feature">
+          <strong>돌보기</strong>
+          밥을 주고 씻겨주며 말랑이와 친밀도를 쌓아보세요.
+        </div>
+
+        <div class="feature">
+          <strong>성장과 수집</strong>
+          돌봄 방식에 따라 달라지는 말랑이를 발견하고 도감을 완성해보세요.
+        </div>
+
+        <div class="feature">
+          <strong>친구와 교류</strong>
+          친구의 컬렉션과 미니게임 기록을 확인하고 함께 인연을 만들어보세요.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>개발 및 운영: Journey by Jack</p>
+      <p>
+        문의:
+        <a href="mailto:attractivenest.gmail.com">
+          attractivenest.gmail.com
+        </a>
+      </p>
+      <p>© 2026 Journey by Jack. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

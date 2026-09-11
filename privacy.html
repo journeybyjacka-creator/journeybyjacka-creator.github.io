@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>개인정보처리방침 | 말랑이는 내 친구</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #eaf5ff;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 50% 0%, #234f79, transparent 32%),
+        linear-gradient(160deg, #061525, #102d4a 60%, #111d30);
+    }
+
+    .page {
+      width: min(900px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: clamp(32px, 6vw, 50px);
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin-top: 38px;
+      color: #aee5ff;
+      font-size: 22px;
+    }
+
+    h3 {
+      color: #d7f1ff;
+    }
+
+    p, li {
+      color: #d2e3ef;
+    }
+
+    a {
+      color: #9bddff;
+    }
+
+    .card {
+      padding: 26px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .notice {
+      margin: 22px 0;
+      padding: 18px;
+      border-left: 4px solid #76d4ff;
+      border-radius: 12px;
+      background: rgba(118, 212, 255, 0.12);
+    }
+
+    .home-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: #092037;
+      font-weight: bold;
+      text-decoration: none;
+      background: #bce9ff;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #9eb8cc;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 34px 0;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <a class="home-link" href="index.html">← 홈페이지로 돌아가기</a>
+
+    <header>
+      <h1>개인정보처리방침</h1>
+      <p>시행일: 2026년 9월 4일</p>
+    </header>
+
+    <div class="card">
+      <p>
+        YOONHYUCK JANG(이하 “운영자”)은 모바일 게임
+        “말랑이는 내 친구”(이하 “서비스”) 이용자의 개인정보를 중요하게
+        생각하며, 개인정보 보호 관련 법령을 준수하기 위해 다음과 같이
+        개인정보처리방침을 공개합니다.
+      </p>
+
+      <h2>1. 처리하는 정보</h2>
+
+      <p>서비스는 다음 정보를 처리할 수 있습니다.</p>
+
+      <ul>
+        <li>앱 최초 이용 시 자동 생성되는 익명 사용자 식별자</li>
+        <li>이용자가 입력한 캐릭터 이름과 표시 이름</li>
+        <li>친구 코드, 친구 요청 및 친구 관계 정보</li>
+        <li>캐릭터 상태, 컬렉션, 미니게임 점수 등 게임 진행 정보</li>
+        <li>알림 수신 여부와 날씨 지역 설정</li>
+        <li>서비스 오류 확인에 필요한 기기 운영체제 및 앱 버전 정보</li>
+      </ul>
+
+      <h2>2. 위치정보 사용</h2>
+
+      <p>
+        이용자가 위치 권한을 허용하면 서비스는 현재 위치를 이용하여
+        가까운 날씨 지역을 선택합니다. 현재 위치 좌표는 날씨 지역을
+        판단하는 용도로 사용되며, 운영자의 Supabase 데이터베이스에
+        위치 좌표 자체를 저장하지 않습니다.
+      </p>
+
+      <p>
+        위치 권한을 허용하지 않아도 이용자가 지역을 직접 선택하여
+        서비스를 이용할 수 있습니다.
+      </p>
+
+      <h2>3. 알림 사용</h2>
+
+      <p>
+        이용자가 알림 권한을 허용한 경우 캐릭터 상태 및 날씨와 관련된
+        알림을 기기에 표시할 수 있습니다. 이용자는 앱 설정 또는 기기
+        설정에서 언제든지 알림을 끌 수 있습니다.
+      </p>
+
+      <h2>4. 이용 목적</h2>
+
+      <ul>
+        <li>캐릭터 육성 및 게임 진행 정보 저장</li>
+        <li>친구 코드, 친구 요청 및 친구 랭킹 기능 제공</li>
+        <li>날씨와 미세먼지 정보 제공</li>
+        <li>캐릭터 상태 및 날씨 알림 제공</li>
+        <li>서비스 오류 확인, 부정 이용 방지 및 안정적인 운영</li>
+        <li>이용자 문의와 데이터 삭제 요청 처리</li>
+      </ul>
+
+      <h2>5. 기기 내부에 저장되는 정보</h2>
+
+      <p>
+        캐릭터 상태, 설정, 출석 기록 등 일부 게임 정보는 이용자의 기기에
+        저장될 수 있습니다. 앱을 삭제하면 기기에 저장된 정보가 함께
+        삭제될 수 있습니다.
+      </p>
+
+      <h2>6. 외부 서비스 이용</h2>
+
+      <h3>Supabase</h3>
+
+      <p>
+        서비스는 인증, 친구 기능 및 게임 데이터 저장을 위해 Supabase를
+        이용합니다. Supabase에는 익명 사용자 식별자, 친구 코드, 표시 이름,
+        친구 관계, 캐릭터 정보와 미니게임 기록 등이 저장될 수 있습니다.
+      </p>
+
+      <p>
+        현재 서비스의 주요 데이터베이스는 대한민국 서울 리전으로
+        설정되어 있습니다.
+      </p>
+
+      <h3>공공 날씨 서비스</h3>
+
+      <p>
+        날씨와 미세먼지 정보를 제공하기 위해 기상청 및 공공데이터포털의
+        날씨·대기질 정보를 이용할 수 있습니다.
+      </p>
+
+      <h2>7. 개인정보의 제3자 제공</h2>
+
+      <p>
+        운영자는 이용자의 개인정보를 판매하지 않습니다. 이용자의 동의가
+        있거나 관계 법령에 따른 요청이 있는 경우를 제외하고 개인정보를
+        제3자에게 제공하지 않습니다.
+      </p>
+
+      <h2>8. 보유 및 이용 기간</h2>
+
+      <p>
+        개인정보는 서비스 제공에 필요한 기간 동안 보관하며, 이용 목적이
+        달성되거나 이용자가 삭제를 요청하면 지체 없이 삭제합니다.
+        단, 관계 법령에 따라 보관해야 하는 정보는 해당 법령에서 정한
+        기간 동안 별도로 보관할 수 있습니다.
+      </p>
+
+      <h2 id="delete-account">9. 계정 및 데이터 삭제 요청</h2>
+
+      <div class="notice">
+        <strong>말랑이는 내 친구 계정 및 데이터 삭제</strong>
+
+        <p>
+          이용자는 아래 이메일로 계정 및 관련 데이터 삭제를 요청할 수
+          있습니다.
+        </p>
+
+        <p>
+          이메일 제목에 “말랑이 데이터 삭제 요청”이라고 작성하고,
+          앱에서 확인한 친구 코드와 삭제를 요청하는 정보의 범위를
+          함께 보내주세요.
+        </p>
+
+        <p>
+          이메일:
+          <a href="mailto:attractivenest@gmail.com">
+            attractivenest@gmail.com
+          </a>
+        </p>
+
+        <p>
+          요청자의 권한 확인이 필요한 경우 운영자가 추가 확인을 요청할
+          수 있습니다. 확인이 완료되면 관련 법령상 보존 의무가 있는
+          정보를 제외하고 계정 및 연결된 데이터를 삭제합니다.
+        </p>
+      </div>
+
+      <h2>10. 이용자의 권리</h2>
+
+      <p>
+        이용자는 자신의 개인정보에 대해 열람, 정정, 삭제 또는 처리정지를
+        요청할 수 있습니다. 관련 요청은 개인정보 보호책임자 이메일로
+        접수할 수 있습니다.
+      </p>
+
+      <h2>11. 아동의 개인정보 보호</h2>
+
+      <p>
+        서비스는 이용에 필요한 최소한의 정보만 처리합니다. 만 14세 미만
+        이용자의 개인정보와 관련하여 법정대리인은 개인정보의 열람, 정정,
+        삭제를 요청할 수 있습니다.
+      </p>
+
+      <h2>12. 개인정보 보호조치</h2>
+
+      <ul>
+        <li>데이터 전송 구간 암호화</li>
+        <li>데이터베이스 접근 권한 제한</li>
+        <li>서비스 제공에 필요한 최소한의 정보 처리</li>
+        <li>보안 업데이트 및 접근 통제</li>
+      </ul>
+
+      <h2>13. 개인정보 보호책임자</h2>
+
+      <ul>
+        <li>성명: YOONHYUCK JANG</li>
+        <li>
+          이메일:
+          <a href="mailto:attractivenest@gmail.com">
+            attractivenest@gmail.com
+          </a>
+        </li>
+      </ul>
+
+      <h2>14. 개인정보처리방침 변경</h2>
+
+      <p>
+        개인정보처리방침이 변경되는 경우 시행 전에 앱 또는 이 페이지를
+        통해 변경 내용을 안내합니다.
+      </p>
+    </div>
+
+    <footer>
+      <p>© 2026 Journey by Jack. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

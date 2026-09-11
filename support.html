@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>고객지원 | 말랑이는 내 친구</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #eaf5ff;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      line-height: 1.7;
+      background:
+        radial-gradient(circle at 50% 0%, #234f79, transparent 32%),
+        linear-gradient(160deg, #061525, #102d4a 60%, #111d30);
+    }
+
+    .page {
+      width: min(900px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 6vw, 52px);
+    }
+
+    h2 {
+      color: #aee5ff;
+      font-size: 22px;
+    }
+
+    p, li {
+      color: #d2e3ef;
+    }
+
+    a {
+      color: #9bddff;
+    }
+
+    .home-link {
+      display: inline-block;
+      margin-bottom: 28px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: #092037;
+      font-weight: bold;
+      text-decoration: none;
+      background: #bce9ff;
+    }
+
+    .intro {
+      margin-bottom: 32px;
+    }
+
+    .card {
+      margin: 18px 0;
+      padding: 26px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      color: #092037;
+      font-weight: bold;
+      text-decoration: none;
+      background: #76d4ff;
+    }
+
+    .delete-button {
+      color: #ffffff;
+      background: #855bd8;
+    }
+
+    .step {
+      margin: 8px 0;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .warning {
+      margin-top: 18px;
+      padding: 16px;
+      border-left: 4px solid #e9b9ff;
+      border-radius: 12px;
+      background: rgba(164, 103, 216, 0.14);
+    }
+
+    footer {
+      margin-top: 42px;
+      color: #9eb8cc;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 34px 0;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .button {
+        display: block;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <a class="home-link" href="index.html">← 홈페이지로 돌아가기</a>
+
+    <section class="intro">
+      <h1>고객지원</h1>
+      <p>
+        말랑이는 내 친구를 이용하면서 문제가 발생했거나 도움이 필요하다면
+        아래 이메일로 문의해 주세요.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>일반 문의 및 오류 신고</h2>
+
+      <p>
+        문의할 때 사용 중인 휴대전화 종류, 운영체제 버전, 오류가 발생한
+        화면과 상황을 함께 알려주시면 확인에 도움이 됩니다.
+      </p>
+
+      <a
+        class="button"
+        href="mailto:attractivenest@gmail.com?subject=%5B말랑이는%20내%20친구%5D%20고객지원%20문의"
+      >
+        이메일로 문의하기
+      </a>
+    </section>
+
+    <section class="card" id="delete-account">
+      <h2>계정 및 데이터 삭제 요청</h2>
+
+      <p>
+        이용자는 말랑이는 내 친구에서 생성된 계정과 관련 데이터의
+        삭제를 요청할 수 있습니다.
+      </p>
+
+      <div class="step">
+        <strong>1.</strong>
+        앱의 친구 화면에서 본인의 친구 코드를 확인합니다.
+      </div>
+
+      <div class="step">
+        <strong>2.</strong>
+        아래 버튼을 눌러 삭제 요청 이메일을 작성합니다.
+      </div>
+
+      <div class="step">
+        <strong>3.</strong>
+        이메일에 친구 코드와 삭제를 원하는 데이터 범위를 적어주세요.
+      </div>
+
+      <div class="step">
+        <strong>4.</strong>
+        운영자가 요청자 확인을 위해 추가 정보를 요청할 수 있습니다.
+      </div>
+
+      <a
+        class="button delete-button"
+        href="mailto:attractivenest@gmail.com?subject=%5B말랑이는%20내%20친구%5D%20계정%20및%20데이터%20삭제%20요청&body=친구%20코드%3A%0A%0A삭제를%20요청하는%20데이터%3A%0A%0A요청%20내용%3A"
+      >
+        계정 및 데이터 삭제 요청
+      </a>
+
+      <div class="warning">
+        <strong>삭제 전 확인해 주세요.</strong>
+
+        <p>
+          삭제가 완료되면 캐릭터, 아이템, 친구 관계, 미니게임 기록 등
+          계정에 연결된 데이터를 복구하지 못할 수 있습니다.
+        </p>
+
+        <p>
+          관계 법령에 따라 보관해야 하는 정보가 있는 경우 해당 정보는
+          법정 보관 기간 동안 별도로 보관한 후 삭제할 수 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>자주 묻는 질문</h2>
+
+      <h3>휴대전화를 바꾸면 데이터가 그대로 유지되나요?</h3>
+      <p>
+        일부 게임 정보는 기기에 저장될 수 있으므로 현재 제공되는 계정
+        연결 상태에 따라 데이터가 자동으로 이전되지 않을 수 있습니다.
+      </p>
+
+      <h3>알림을 끄고 싶어요.</h3>
+      <p>
+        게임의 시스템 설정 또는 휴대전화의 앱 알림 설정에서 알림을
+        끌 수 있습니다.
+      </p>
+
+      <h3>날씨 지역이 정확하지 않아요.</h3>
+      <p>
+        게임 설정에서 날씨 지역을 직접 선택하거나 위치 권한 설정을
+        확인해 주세요.
+      </p>
+
+      <h3>결제 또는 환불 문의는 어떻게 하나요?</h3>
+      <p>
+        실제 결제가 이루어진 경우 먼저 Google Play의 주문 내역과 환불
+        절차를 확인해 주세요. 추가 도움이 필요하면 주문번호와 함께
+        고객지원 이메일로 문의해 주세요.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>운영자 정보</h2>
+
+      <ul>
+        <li>서비스: 말랑이는 내 친구</li>
+        <li>운영자: YOONHYUCK JANG</li>
+        <li>
+          이메일:
+          <a href="mailto:attractivenest@gmail.com">
+            attractivenest@gmail.com
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        <a href="privacy.html">개인정보처리방침</a>
+        ·
+        <a href="terms.html">이용약관</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 Journey by Jack. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
